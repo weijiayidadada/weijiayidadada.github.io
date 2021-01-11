@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ball{
+            width:100px;
+            height:100px;
+            background:pink;
+            border-radius:50%;
+            position:absolute;
+            left:0px;
+            top:0px;
+            transition:all 1s linear 0s;
+        }
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+</body>
+</html>
+<script>
+
+    function ranPosition(width,height){
+        // width1792  height500
+        var newLeft = Math.floor(Math.random()*1000000) % width;
+        var newTop = Math.floor(Math.random()*1000000) % height;
+        ball.style.left = newLeft + 'px';
+        ball.style.top = newTop + 'px';
+    }
+    function changeColor(){
+        var r = Math.floor(Math.random()*1000000) % 256;
+        var g = Math.floor(Math.random()*1000000) % 256;
+        var b = Math.floor(Math.random()*1000000) % 256;
+        ball.style.background='rgba(' + r + ','+ g +',' + b +  ',1)';
+    }
+    setInterval(function(){
+        ranPosition(1792,500);
+        changeColor();
+    },1000);
+</script>
