@@ -1,42 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        #ball{
-            width:100px;
-            height:100px;
-            background:pink;
-            border-radius:50%;
-            position:absolute;
-            left:0px;
-            top:0px;
-            transition:all 1s linear 0s;
-        }
-    </style>
+	<title>港剧页面</title>
+	<link rel="stylesheet" type="text/css" href="wei.css">
+	<!-- <script type="text/javascript" src="wei.js"></script> -->
 </head>
 <body>
-    <div id="ball"></div>
+	<div id="header">
+		
+		<div id="nav">
+			<ul id="nav_ul">
+				<li class="nav_li"><a href="#" target="_blank">内陆电影</a></li>
+				<li class="nav_li"><a href="#" target="_blank">香港电影</a></li>
+				<li class="nav_li"><a href="#" target="_blank">动漫电影</a></li>
+				<li class="nav_li"><a href="#" target="_blank">外国电影</a></li>
+				<li class="nav_li"><a href="#footer" target="_blank">底部</a></li>
+			</ul>
+		</div>
+		<div id="search">
+			<input type="text" name="search" id="search">
+			<div id="search_icon"><img src="images/search.jpg" style="width: 19px;height: 19px;"></div>
+		</div>
+		<div id="ccc">
+			进入时间:<input type="text" name="" id="shijian1" value="">
+			<br>
+			当前时间:<input type="text" name="" id="shijian2" value="">
+			<!-- <br> -->
+			<!-- 观看时长:<input type="text" name="" id="shichang" value=""> -->
+		</div>
+	</div>
+	<div id="aside">
+		
+		<ul id="aside_ul">
+			<li class="aside_li"><div id="logo"></div></li>
+			<li class="aside_li"><a href="#dongzuo">动作片</a></li>
+			<li class="aside_li"><a href="#aiqing">爱情片</a></li>
+			<li class="aside_li"><a href="#kongbu">恐怖片</a></li>
+			<li class="aside_li"><a href="#zhanzheng">战争片</a></li>
+			<li class="aside_li"><a href="#xiju">喜剧片</a></li>
+		</ul>
+		<ul id="aside_ul2">
+			<li class="aside_li2"><a href="#piaofang">票房最高的十部电影</a></li>
+			<li class="aside_li2"><a href="#pingfen">评分最高的十部电影</a></li>
+		</ul>
+	</div>
+	<div class="section">
+		<div id="first">
+			<div id="warp">
+				<div class="warp_div" ></div>
+				<div class="warp_div" ></div>
+				<div class="warp_div" ></div>
+				<div class="warp_div" ></div>
+				<div class="warp_div" ></div>
+				<!-- <div class="warp_div" ></div> -->
+			</div>
+			<div id="icon">
+				<li class="icon_li" id="0">年度唯一警匪片《除暴》——王千源死咬吴彦祖以命搏命</li>
+				<li class="icon_li" id="1">《非分熟女》——蔡卓妍开启两性救赎之旅 探索女性身体自主</li>
+				<li class="icon_li" id="2">《急先锋》首曝预告！唐季礼成龙带你嗨翻新年</li>
+				<li class="icon_li" id="3">《天将雄师》在京发布 成龙不相信六十岁有坎坷</li>
+				<li class="icon_li" id="4">《大师兄》定档预告 甄子丹当老师终结校园暴力</li>
+				<!-- <li class="icon_li" id="5"></li> -->
+			</div>
+		</div>
+
+		<div id="dongzuo">
+			<a href="#" target="_blank"><p>动作片>></p></a>	
+			<ul id="dz_ul">
+				<li class="dz_li"><a href="#" target="_blank"><p>急先锋</p><span>7.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>十二生肖</p><span>8.1分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>新警察故事</p><span>8.5分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>英伦对决</p><span>8.4分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>警察故事</p><span>8.5分</span></a></li>
+			</ul>
+		</div>
+
+		<div id="aiqing">
+			<a href="#"><p>爱情片>></p></a>	
+			<ul id="aq_ul">
+				<li class="dz_li"><a href="#" target="_blank"><p>在一起</p><span>7.0分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>最佳男友进化论</p><span>6.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>我知女人心</p></a><span>5.6分</span></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>决战食神</p></a><span>7.7分</span></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>为你钟情</p></a><span>7.9分</span></li>
+			</ul>
+		</div>
+
+		<div id="kongbu">
+			<a href="#"><p>恐怖片>></p></a>	
+			<ul id="kb_ul">
+				<li class="dz_li"><a href="#" target="_blank"><p>僵尸先生</p><span>8.9分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>僵尸道长</p><span>8.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>僵尸家族</p><span>9.0分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>人吓人</p><span>8.5分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>一眉道长</p><span>8.6分</span></a></li>
+			</ul>
+		</div>
+
+		<div id="zhanzheng">
+			<a href="#"><p>战争片>></p></a>	
+			<ul id="zz_ul">
+				<li class="dz_li"><a href="#" target="_blank"><p>天将雄狮</p><span>7.5分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>英雄本色3</p><span>9.0分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>忠烈杨家将</p><span>8.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>花木兰</p></a><span>7.7分</span></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>铁血将军</p><span>6.7分</span></a></li>
+			</ul>
+		</div>
+
+		<div id="xiju">
+			<a href="#"><p>喜剧片>></p></a>	
+			<ul id="xj_ul">
+				<li class="dz_li"><a href="#" target="_blank"><p>功夫</p><span>9.0分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>新喜剧之王</p><span>7.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>情圣</p><span>8.4分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>唐伯虎点秋香</p><span>9.1分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>整蛊专家</p><span>8.7分</span></a></li>
+			</ul>
+		</div>
+
+		<div id="pingfen">
+			<a href="#"><p>评分最高的十部电影(豆瓣)>></p></a>	
+			<ul id="pf_ul">
+				<li class="dz_li"><a href="#" target="_blank"><p>喜剧之王</p><span>8.5分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>岁月神偷</p><span>8.6分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>倩女幽魂</p><span>8.6分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>甜蜜蜜</p><span>8.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>东成西就</p><span>8.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>重庆森林</p><span>8.7分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>春光乍泄</p><span>8.8分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>大话西游之月光宝盒</p><span>8.9分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>无间道</p><span>9.1分</span></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>大话西游之仙履奇缘</p><span>9.2分</span></a></li>
+			</ul>
+		</div>
+
+		<div id="piaofang">
+			<a href="#"><p>票房最高的十部电影(香港地区)>></p></a>	
+			<ul id="pf2_ul">
+				<li class="dz_li"><a href="#" target="_blank"><p>赌神2</p><h3>5254万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>无间道</p><h3>5505万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>美人鱼</p><h3>5622万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>红番区</p><h3>5691万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>警察故事4</p><h3>5751万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>叶问3</p><h3>6036万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>少林足球</p><h3>6073万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>功夫</p><h3>6127万</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>长江七号</p><h3>6237分</h3></a></li>
+				<li class="dz_li"><a href="#" target="_blank"><p>寒战2</p><h3>6680万</h3></a></li>
+			</ul>
+		</div>
+
+		<div id="footer">
+			<ul id="footer_ul">
+				<li class="footer_li"><a href="#">回到顶部</a>&nbsp&nbsp&nbsp|</li>
+				<li class="footer_li"><a href="#footer" id="guanyu">关于我们</a>&nbsp&nbsp&nbsp|</li>
+				<li class="footer_li"><a href="#footer" id="lianxi">联系我们</a>&nbsp&nbsp&nbsp|</li>
+				<li class="footer_li"><a href="#footer">广告合作</a>&nbsp&nbsp&nbsp|<li>
+				<li class="footer_li"><a href="#footer">帮助与反馈</a></li>
+			</ul>
+			<p>© 2021 菜鸟影院  www.meinonghao.com<br>
+			枯藤老树昏鸦，空调wifi西瓜。夕阳西下，独自一个人的天下。</p>
+			<img src="images/cainiaologo.png" style="width: 100px; height: 100px">
+		</div>
+	</div>
+	
 </body>
 </html>
-<script>
+<script type="text/javascript">
+	var warp_div = document.getElementsByClassName('warp_div');
+	var icon_li = document.getElementsByClassName('icon_li');
+	var i =0;
+	for(i=0;i<5;i++){
+		warp_div[i].style.background = 'url(images/1'+(i+1)+'.jpg)';
+		warp_div[i].style.backgroundSize = '600px 400px';
+	}
+	for(i=0;i<5;i++){
+		icon_li[i].onmousemove = function(){
+			for(i=0;i<5;i++){
+				warp_div[i].style.display = 'none';
+				icon_li[i].style.color = 'black';
+			}
+			warp_div[this.id].style.display = 'block';
+			icon_li[this.id].style.color = 'red';
+		}
+	}
+	var lis1 = dz_ul.getElementsByTagName('li');
+	var lis2 = aq_ul.getElementsByTagName('li');
+	var lis3 = kb_ul.getElementsByTagName('li');
+	var lis4 = zz_ul.getElementsByTagName('li');
+	var lis5 = xj_ul.getElementsByTagName('li');
+	var lis6 = pf_ul.getElementsByTagName('li');
+	var lis7 = pf2_ul.getElementsByTagName('li');
 
-    function ranPosition(width,height){
-        // width1792  height500
-        var newLeft = Math.floor(Math.random()*1000000) % width;
-        var newTop = Math.floor(Math.random()*1000000) % height;
-        ball.style.left = newLeft + 'px';
-        ball.style.top = newTop + 'px';
+
+	// console.log(lis1)
+	for(i=0;i<5;i++){
+		lis1[i].style.background = 'url(images/2'+(i+1)+'.jpg) no-repeat';
+		lis1[i].style.backgroundSize = '190px 300px';
+		lis2[i].style.background = 'url(images/3'+(i+1)+'.jpg) no-repeat';
+		lis2[i].style.backgroundSize = '190px 300px';
+		lis3[i].style.background = 'url(images/4'+(i+1)+'.jpg) no-repeat';
+		lis3[i].style.backgroundSize = '190px 300px';
+		lis4[i].style.background = 'url(images/5'+(i+1)+'.jpg) no-repeat';
+		lis4[i].style.backgroundSize = '190px 300px';
+		lis5[i].style.background = 'url(images/6'+(i+1)+'.jpg) no-repeat';
+		lis5[i].style.backgroundSize = '190px 300px';
+	}
+	for(i=0;i<10;i++){
+		lis6[i].style.background = 'url(images/7'+(i+1)+'.jpg) no-repeat';
+		lis6[i].style.backgroundSize = '190px 300px';
+		lis7[i].style.background = 'url(images/8'+(i+1)+'.jpg) no-repeat';
+		lis7[i].style.backgroundSize = '190px 300px';
+	}
+
+	var guanyu = document.getElementById('guanyu');
+	var lianxi = document.getElementById('lianxi');
+
+	guanyu.onclick = function(){
+		alert("组员1:韦兆鹏\n组员2:罗文龙\n组员3:邵巍\n组员4:黄智飞\n");
+	}
+	lianxi.onclick = function(){
+		alert("有问题请联系此邮箱：1940278449@qq.com")
+	}
+
+	var time = new Date();
+    var str1 = time.getFullYear() + '/' + (time.getMonth() + 1) + '/' + time.getDate() + time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds() ;
+    shijian1.value = str1;
+    str4 = time.getTime() ;
+
+    var str2='';
+    var str3='';
+	function getTime(){
+        //  获取当前的时间对象
+        var time = new Date();
+        str2 = time.getFullYear() + '/' + (time.getMonth() + 1) + '/' + time.getDate() + time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds() ;
+        shijian2.value = str2;
+        str3 = time.getTime();
     }
-    function changeColor(){
-        var r = Math.floor(Math.random()*1000000) % 256;
-        var g = Math.floor(Math.random()*1000000) % 256;
-        var b = Math.floor(Math.random()*1000000) % 256;
-        ball.style.background='rgba(' + r + ','+ g +',' + b +  ',1)';
-    }
+    getTime()
     setInterval(function(){
-        ranPosition(1792,500);
-        changeColor();
-    },1000);
+        getTime()
+    },1000)
+
+    var str5 = '';
+  //   setInterval(function(){
+		// str5 = Math.floor((str3-str4)/1000);
+		// shichang.value = str5 + '秒';
+		
+  //   },1000)
+    
 </script>

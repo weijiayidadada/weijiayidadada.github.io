@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>菜鸟电影</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		body{
+			background:url(images/gui2.jpg) no-repeat;
+			background-size: 1280px 700px;
+		}
+		.personname{
+			position: fixed;
+			top: 200px;
+			width: 300px;
+			height: 500px;
+			color: white;
+		}
+		.personname:nth-child(1){
+			/*background: url(images/wei2.png) no-repeat;*/
+			/*background-size: 400px 400px;*/
+			left: 60px;
+			width: 500px;
+			opacity:0.8;
+		}
+		.personname:nth-child(1):hover{
+			opacity:1;
+		}
+		.personname:nth-child(2){
+			/*background: url(images/luo2.png) no-repeat;
+			background-size: 400px 400px;*/
+			left: 300px;
+			width: 400px;
+			opacity:0.8;
+
+		}
+		.personname:nth-child(2):hover{
+			opacity:1;
+		}
+		.personname:nth-child(3){
+			/*background: url(images/shao.png) no-repeat;
+			background-size: 400px 400px;*/
+			left: 530px;
+			width: 400px;
+			opacity:0.8;
+
+		}
+		.personname:nth-child(3):hover{
+			opacity:1;
+		}
+		.personname:nth-child(4){
+			/*background: url(images/huang2.png) no-repeat;
+			background-size: 400px 400px;*/
+			left: 780px;
+			width: 500px;
+			opacity:0.8;
+		}
+		.personname:nth-child(4):hover{
+			opacity:1;
+		}
+		#gui1,#gui2,#gui3,#gui4{
+			width: 200px;
+			height: 100px;
+			background: url(images/gui2.jpg);
+			border-radius: 50%;
+			position: absolute;
+			left: 130px;
+			top: 100px;
+			text-align: center;
+			line-height: 50px;
+			color: gray;
+			opacity:0.5;
+		}
+		#gui2{
+			left: 380px;
+		}
+		#gui3{
+			left: 630px;
+		}
+		#gui4{
+			left: 880px;
+		}
+		#gif{
+			width: 100%;
+			height: 200px;
+			/*border-bottom: 1px solid rgba(0,0,0,0.1);*/
+		}
+		#fei{
+			width: 100px;
+			height: 100px;
+			background: url(images/fei.png);
+			background-size: 100px 100px;
+			transform: rotate(50deg);
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		#xian1,#xian2,#xian3,#xian4{
+			position: absolute;
+			left: 230px;
+			width: 2px;
+			height: 100px;
+			background: #2c2c2c;
+		}
+		#xian2{
+			left: 480px;
+		}
+		#xian3{
+			left: 730px;
+		}
+		#xian4{
+			left: 980px;
+		}
+		a{
+			width: 400px;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div id="xue">
+		<ul>
+			<li class="personname">
+				<a href="file:///C:/Users/Bigbird/Desktop/vegetablebird/qidi_2018/%E7%AD%94%E8%BE%A9%E4%BD%9C%E4%B8%9A/wei.html" >
+					<img src="images/wei2.png" width="400" height="400">
+				</a>
+			</li>
+			<li class="personname">
+				<a href="file:///C:/Users/Bigbird/Desktop/vegetablebird/qidi_2018/%E7%AD%94%E8%BE%A9%E4%BD%9C%E4%B8%9A/%E5%AE%9E%E8%AE%AD%E4%B8%80%E9%A1%B9%E7%9B%AE.%E5%8A%A8%E6%BC%AB/dongman.html" >
+					<img src="images/luo2.png" width="400" height="400">
+				</a>
+			</li>
+			<li class="personname">
+				<a href="file:///C:/Users/Bigbird/Desktop/vegetablebird/qidi_2018/%E7%AD%94%E8%BE%A9%E4%BD%9C%E4%B8%9A/%E5%A4%96%E5%9B%BD%E7%94%B5%E5%BD%B1.html">
+					<img src="images/shao.png" width="400" height="400">
+				</a>
+			</li>
+			<li class="personname">
+				<a href="file:///C:/Users/Bigbird/Desktop/vegetablebird/qidi_2018/%E7%AD%94%E8%BE%A9%E4%BD%9C%E4%B8%9A/%E6%B5%8B%E8%AF%95/movie.html">
+					<img src="images/huang2.png" width="400" height="400">
+				</a>
+			</li>
+		</ul>
+		<div id="gui1">
+			<p>我叫达芬奇点我的身体<br>进入港片页面</p>
+		</div>
+		<div id="gui2">
+			<p>我叫多纳泰罗点我的身体<br>进入动漫页面</p>
+		</div>
+		<div id="gui3">
+			<p>我叫拉斐尔点我的身体<br>进入美剧页面</p>
+		</div>
+		<div id="gui4">
+			<p>我叫米开朗琪罗点我的身体<br>进入国产页面</p>
+		</div>
+	</div>
+	<div id="gif">
+		<div id="xian1"></div>
+		<div id="xian2"></div>
+		<div id="xian3"></div>
+		<div id="xian4"></div>
+		<div id="fei"></div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var gui1 = document.getElementById('gui1');
+	var gui2 = document.getElementById('gui2');
+	var gui3 = document.getElementById('gui3');
+	var gui4 = document.getElementById('gui4');
+	var fei = document.getElementById('fei');
+	var xian1 = document.getElementById('xian1');
+	var xian2 = document.getElementById('xian2');
+	var xian3 = document.getElementById('xian3');
+	var xian4 = document.getElementById('xian4');
+
+	setInterval(function(){
+		gui1.style.top = '500px';
+		gui1.style.transition = 'all 3s linear 0.4s';
+		gui2.style.top = '500px';
+		gui2.style.transition = 'all 3s linear 1.1s';
+		gui3.style.top = '500px';
+		gui3.style.transition = 'all 3s linear 1.8s';
+		gui4.style.top = '500px';
+		gui4.style.transition = 'all 3s linear 2.5s';
+		fei.style.left = '1157px';
+		fei.style.transition = 'all 3s linear 0s';
+	},100)
+	setInterval(function(){
+		xian1.style.display = 'none';
+	},400)
+	setInterval(function(){
+		xian2.style.display = 'none';
+	},1100)
+	setInterval(function(){
+		xian3.style.display = 'none';
+	},1800)
+	setInterval(function(){
+		xian4.style.display = 'none';
+	},2500)
+	setInterval(function(){
+		fei.style.display = 'none';
+	},3100)
+</script>
